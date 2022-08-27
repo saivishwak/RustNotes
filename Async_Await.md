@@ -1,6 +1,4 @@
-# Rust Notes
-
-The Async and Await paradime in Rust
+# The Async and Await paradime in Rust
 
 Lets consider the below code and go thrugh each step
 
