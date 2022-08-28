@@ -56,7 +56,9 @@ this point c also won't be valid. All this is to ensure double free is not happe
 
 If we see he move_ownership() method. We are borrowing the string, we don't own it. But here we are trying to move the string to variable b;
 This is not acceptable as we don't own the string we just borrowed it. To fix this you should remove the move or use copy() trait which does a
-depp_copy.
+deep_copy. Careful here, this is only for the heap memory types, instead if i use i32 there won't be a problem because we know that in comile time
+so we can make a copy.
+
 
 > Note: 
 
